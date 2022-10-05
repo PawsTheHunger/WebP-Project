@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Shared Preference -->
+
 <head>
     <script type="text/javascript" src="myscripts.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="../mystyle.css">
 </head>
 
 <body>
@@ -15,24 +15,32 @@
         <div class="shape"></div>
     </div>
     <form>
-        <h3>Login Here</h3>
+        <h4>Register Member Here</h4>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name" id="name">
 
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
+        <label for="roll">Roll Number</label>
+        <input type="text" placeholder="Roll Number" id="roll">
 
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <label id="dropbtn">Login As:</label>
+        <label for="roll">Phone</label>
+        <input type="text" placeholder="Phone" id="roll">
+
+        <label for="password">Hostel</label>
+        <input type="password" placeholder="Hostel" id="password">
+
+
+        <label for="password">Mess</label>
+        <input type="password" placeholder="Mess" id="password">
+
+        <label id="dropbtn">Register As</label>
         <select name="login-type" id="login-type" > // onchange="loginAs(this.value)"
-            <option value="">Please choose an option</option>
-            <option >Volunteer</option>
-            <option >Admin</option>
             <option >Mess Representative</option>
+            <option >Volunteer</option>
         </select>
-
-
-        <button onclick="loginAs('Login')">Log In</button>
+        <button onclick="loginAs('Login')">Register</button>
         <!-- <div class="social">
             <div class="go"><i class="fab fa-google"></i> Google</div>
             <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
